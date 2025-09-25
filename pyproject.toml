@@ -18,6 +18,6 @@ authors = [
 ]
 dependencies = []
 
-[tool.setuptools]
-packages = ["ur3e", "ur3", "ur5", "ur5e", "ur10", "ur10e"]
+#[tool.setuptools]
+#packages = ["ur3e", "ur3", "ur5", "ur5e", "ur10", "ur10e"]
 
