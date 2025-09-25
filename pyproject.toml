@@ -1,0 +1,23 @@
+[build-system]
+# These are the tools pip must install into the isolated build environment
+requires = [
+    "setuptools>=64",   # modern setuptools
+    "wheel",            # needed to build wheels
+    "Cython>=0.29"      # required to compile .pyx -> .cpp
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ur_ikfast"
+version = "0.1.0"
+description = "IKFast-based inverse kinematics solvers for UR robots"
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [
+  { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = []
+
+[tool.setuptools]
+packages = ["ur3e", "ur3", "ur5", "ur5e", "ur10", "ur10e"]
+
